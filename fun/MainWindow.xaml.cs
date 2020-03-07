@@ -48,7 +48,7 @@ namespace fun
         public ChartValues<ObservablePoint> ValuesY { get; private set; }
         //public ChartValues<Axis> ValuesX { get; private set; }
         // public ChartValues<Axis> Valuesxy { get; private set; }
-
+         
         private void EX_Click(object sender, RoutedEventArgs e) {
             TA.Text = "0";
             TB.Text = "1";
