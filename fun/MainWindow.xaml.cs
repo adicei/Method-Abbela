@@ -38,8 +38,26 @@ namespace fun
             Helper.addvar();
 
         }
-        //public SeriesCollection SeriesCollection { get; set; }
-        public string[] Labels { get; set; }
+        private void Klass_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            // lal.Content = "X=" + e.GetPosition(null).X + " Y=" + e.GetPosition(null).Y;
+
+           // x = e.GetPosition(null).X / N.ActualWidth;
+           // y = e.GetPosition(null).Y / N.ActualHeight;
+            anime.GradientOrigin = new Point(e.GetPosition(null).X / N.ActualWidth, e.GetPosition(null).Y / N.ActualHeight);
+            anime.RadiusX = 2;
+            anime.RadiusY = 2;
+            GS1.Color = System.Windows.Media.Color.FromArgb(255, 230, 230, 230);
+            GS1.Offset = 0;
+            //GS3.Color = Color.FromArgb(255, 200, 200, 200);
+            //GS3.Offset = 0.7;
+            GS2.Color = Color.FromArgb(255, 20, 20, 20);
+            GS2.Offset = 1;
+        }
+    
+    //public SeriesCollection SeriesCollection { get; set; }
+    public string[] Labels { get; set; }
         public Func<double, string> YFormatter { get; set; }
 
        // public IList<DataPoint> Points { get; private set; }

@@ -145,27 +145,28 @@
             <!--<Button  x:Name="N"  Background="LightBlue" Content="Сalculate" Click="PUPH_Click"></Button>-->
         </Grid>
         <!--<Grid  Grid.Row=""-->
+        <!--<Grid Grid.Row=" 4" Grid.Column="0">
+            <Button  x:Name="N"  Background="LightBlue" Content="Сalculate" Click="PUPH_Click" >-->
         <Grid Grid.Row=" 4" Grid.Column="0">
-            <Button  x:Name="N"  Background="LightBlue" Content="Сalculate" Click="PUPH_Click">
-                <Button.ToolTip>
-                    <ToolTip >
-                        <!--<StackPanel>
-                            --><!--<TextBlock Text="Мои кошки" />--><!--
-                            <Image Source="C:\Users\adice\OneDrive\Desktop\учёбка\Берник Лабы\Модуль №6\Laba2.2(RK)\fun\1386498983_1379395151.jpg" />
-                        </StackPanel>
-                        <ToolTip.Triggers>
-                            <EventTrigger RoutedEvent="ToolTip.Opened">
-                                <BeginStoryboard>
-                                    <Storyboard TargetProperty="Opacity">
-                                        <DoubleAnimation From="0.0" To="1.0" Duration="0:0:2" />
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger>
-                        </ToolTip.Triggers>-->
-                    </ToolTip>
-                </Button.ToolTip>
-            </Button>
+            <Grid>
+                <Rectangle  x:Name="N"  Stretch="Fill"   MouseMove="Klass_MouseMove" MouseUp="PUPH_Click"  >
+                    <Rectangle.Fill>
+
+                        <RadialGradientBrush x:Name="anime" GradientOrigin="0.5,0.5" RadiusX="0.6" RadiusY="0.6" >
+                            <GradientStop  x:Name="GS1"></GradientStop>
+                            <GradientStop  x:Name="GS3"></GradientStop>
+
+                            <GradientStop x:Name="GS2" ></GradientStop>
+                        </RadialGradientBrush>
+                    </Rectangle.Fill>
+
+                </Rectangle>
+                <TextBlock Text="alculate"  VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </Grid>
         </Grid>
+                
+            <!--</Button>
+        </Grid>-->
         <Grid Grid.Row="5" Grid.Column="0"  Background="AliceBlue">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="13*"/>
